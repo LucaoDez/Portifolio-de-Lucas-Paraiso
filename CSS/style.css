@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+header {
+    min-height: 100vh;
+    padding: 20px 10%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.apresentacao {
+    min-height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+}
+
+.foto-perfil {
+    width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+section h2 {
+    margin-bottom: 30px;
+}
+
+.lista-habilidades {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    list-style: none;
+}
+
+.lista-habilidades li {
+    padding: 15px 25px;
+
+    background-color: #eeeeee;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.lista-habilidades li:hover {
+    transform: translateY(-5px);
+}
+
+.container-projetos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.projeto {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #eeeeee;
+    transition: 0.3s;
+}
+
+.projeto:hover {
+    transform: translateY(-8px);
+}
+
+.projeto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+button {
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background-color: #222222;
+    color: white;
+}
+
+.redes {
+    margin-bottom: 20px;
+}
+
+.redes a {
+    color: white;
+    margin: 0 10px;
+}
+
+.oculto {
+    display: none;
+}
+
+
+/* Tema escuro */
+
+.tema-escuro {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.tema-escuro .projeto,
+.tema-escuro .lista-habilidades li {
+    background-color: #292929;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul.ativo {
+        display: flex;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-projetos {
+        grid-template-columns: 1fr;
+    }
+}

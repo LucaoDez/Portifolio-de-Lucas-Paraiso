@@ -1,13 +1,178 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Lucas Paraíso Benning de Oliveira - Portifolio</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link
+        rel="stylesheet"
+        href="css/style.css">
 </head>
 
 <body>
-    <header>
-        
+    <header id="inicio">
+        <nav>
+            <h1>Lucas</h1>
+            <button id="menu-btn">
+                ☰
+            </button>
+            <ul id="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="apresentacao">
+            <img
+                src="img/foto.jpg"
+                alt="Foto de Lucas"
+                class="foto-perfil">
+            <div>
+                <h2>Olá, eu sou Lucas</h2>
+                <p>Estudante de Ciência da Computação</p>
+                <button id="tema-btn">
+                    Alterar tema
+                </button>
+            </div>
+        </div>
     </header>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <p>
+                Aqui você irá escrever sua biografia.
+                O trabalho exige no mínimo 10 linhas.
+                Você pode falar sobre quem você é,
+                sua formação, seus interesses,
+                seus objetivos profissionais,
+                tecnologias que gosta de estudar
+                e outras informações relacionadas
+                à sua trajetória acadêmica.
+            </p>
+            <div id="texto-extra" class="oculto">
+                <p>
+                    Aqui você pode adicionar informações
+                    extras sobre você.
+                </p>
+            </div>
+            <button id="mostrar-mais">
+                Mostrar mais
+            </button>
+
+            <h3>Curso</h3>
+            <p>Ciência da Computação</p>
+
+            <h3>Área de interesse</h3>
+            <p>
+                Desenvolvimento Web, Redes,
+                Inteligência Artificial etc.
+            </p>
+
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul class="lista-habilidades">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C</li>
+                <li>Python</li>
+                <li>Git</li>
+            </ul>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="container-projetos">
+                <article class="projeto">
+                    <img
+                        src="img/projeto1.png"
+                        alt="Projeto 1"
+                    >
+                    <h3>Projeto 1</h3>
+                    <p>
+                        Descrição breve sobre o projeto.
+                    </p>
+                    <a href="#">
+                        Ver projeto
+                    </a>
+                </article>
+
+                <article class="projeto">
+                    <img
+                        src="img/projeto2.png"
+                        alt="Projeto 2">
+                    <h3>Projeto 2</h3>
+
+                    <p>
+                        Descrição breve sobre o projeto.
+                    </p>
+
+                    <a href="#">
+                        Ver projeto
+                    </a>
+
+                </article>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="form-contato">
+                <label for="nome">
+                    Nome:
+                </label>
+                <input
+                    type="text"
+                    id="nome">
+
+                <label for="email">
+                    Email:
+                </label>
+                <input
+                    type="email"
+                    id="email">
+
+                <label for="mensagem">
+                    Mensagem:
+                </label>
+
+                <textarea
+                    id="mensagem"
+                ></textarea>
+
+                <button type="submit">
+                    Enviar
+                </button>
+
+                <p id="erro-form"></p>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <div class="redes">
+            <a href="#">
+                GitHub
+            </a>
+            <a href="#">
+                LinkedIn
+            </a>
+
+            <a href="#">
+                Instagram
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
+
+</html>
