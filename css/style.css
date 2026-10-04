@@ -72,11 +72,8 @@ section h2 {
 
 .lista-habilidades li {
     padding: 15px 25px;
-
     background-color: #eeeeee;
-
     border-radius: 10px;
-
     transition: 0.3s;
 }
 
@@ -86,10 +83,8 @@ section h2 {
 
 .container-projetos {
     display: grid;
-
     grid-template-columns:
         repeat(2, 1fr);
-
     gap: 30px;
 }
 
@@ -164,7 +159,6 @@ footer {
 .tema-escuro .lista-habilidades li {
     background-color: #292929;
 }
-
 
 /* Responsividade */
 
