@@ -29,7 +29,7 @@ function salvarTema(valor) {
 function atualizarBotaoTema() {
     if (!botaoTema) return;
     const escuro = document.body.classList.contains("tema-escuro");
-    botaoTema.textContent = escuro ? "☀️ Tema" : "🌙 Tema";
+    botaoTema.textContent = escuro ? "🌙 Tema" : "☀️ Tema";
 }
 
 if (lerTema() === "escuro") {
